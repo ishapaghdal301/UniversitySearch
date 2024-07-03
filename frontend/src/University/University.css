@@ -1,0 +1,78 @@
+.university-card {
+    font-family: 'Arial, Helvetica, sans-serif';
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    margin: 45px; 
+    padding: 16px;
+    background-color: #fff;
+    display: inline-block; 
+    vertical-align: top; 
+  }
+  
+  .university-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+  }
+  
+  .university-table th,
+  .university-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .university-table th {
+    background-color: #ececec;
+    color: rgb(0, 0, 0);
+  }
+  
+  .university-table a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .university-table a:hover {
+    text-decoration: underline;
+  }
+  
+  .university-card button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .university-card button:hover {
+    background-color: #155ab6;
+  }
+  
+  .SearchForm {
+    margin-bottom: 20px;
+  }
+  
+  /* Search input style */
+  .SearchForm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Province dropdown style */
+  .SearchForm select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
