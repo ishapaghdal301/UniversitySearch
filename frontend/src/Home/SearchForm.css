@@ -27,12 +27,13 @@
     padding: 8px 16px;
     font-size: 0.9em;
     color: #fff;
-    background-color: #1a73e8;
+    background-color: #0f1114;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .search-button:hover {
-    background-color: #155ab6;
+    background-color: #c1c1c1;
+    color: #0f1114;
   }

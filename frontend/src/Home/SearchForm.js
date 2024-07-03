@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './SearchForm.css'
+import './SearchForm.css';
 
 const SearchForm = ({ onSearch }) => {
   const [country, setCountry] = useState('');
@@ -12,7 +12,6 @@ const SearchForm = ({ onSearch }) => {
         .then(response => response.json())
         .then(data => {
           setProvinces(data.provinces);
-          setSelectedProvince('');
         })
         .catch(error => console.error('Error fetching provinces:', error));
     }
@@ -22,9 +21,16 @@ const SearchForm = ({ onSearch }) => {
     onSearch(country, selectedProvince);
   };
 
+  const handleProvinceChange = (e) => {
+    setSelectedProvince(e.target.value);
+    // Trigger search when province is selected
+    onSearch(country, e.target.value);
+  };
+
   return (
     <div className="search-form-container">
-      <input className="search-input"
+      <input
+        className="search-input"
         type="text"
         value={country}
         onChange={e => setCountry(e.target.value)}
@@ -32,9 +38,9 @@ const SearchForm = ({ onSearch }) => {
       />
       {provinces.length > 0 && (
         <select
-         className='province-select'
+          className="province-select"
           value={selectedProvince}
-          onChange={e => setSelectedProvince(e.target.value)}
+          onChange={handleProvinceChange}
         >
           <option value="">Select province</option>
           {provinces.map(province => (
