@@ -1,5 +1,5 @@
 
-# University List
+# University Search
 
 This application allows users to search and display universities based on country and province criteria. Users can filter universities and download university details as JPEG images.
 
